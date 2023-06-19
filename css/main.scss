@@ -1,0 +1,24 @@
+
+$text-color-primary: #ffff;
+$text-color-secondary: #0ee73d;
+
+header{
+    background: url(../images/bg_main.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+    .navbar{
+        background-color: transparent;
+   
+       
+        a{
+            color: $text-color-secondary;
+        }
+    }
+}
+.landing-container{
+    margin-top: 10rem;
+    margin-left: 10rem;
+    color: $text-color-primary;
+}

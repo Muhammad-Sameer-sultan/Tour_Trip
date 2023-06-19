@@ -1,0 +1,18 @@
+header {
+  background: url(../images/bg_main.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+header .navbar {
+  background-color: transparent;
+}
+header .navbar a {
+  color: #0ee73d;
+}
+
+.landing-container {
+  margin-top: 10rem;
+  margin-left: 10rem;
+  color: white;
+}/*# sourceMappingURL=main.css.map */
