@@ -1,24 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Roboto&display=swap');
 
+$font-primary: 'Eczar', serif;
+$font-secondary: 'Roboto', sans-serif;
+;
 $text-color-primary: #ffff;
 $text-color-secondary: #0ee73d;
+$text-color-logo: red;
+$bg_sign: #A0E7E5;
+$bg_form: #B4F8C8;
+$bg_title: #81e496;
 
-header{
+
+
+@mixin container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
     background: url(../images/bg_main.jpg);
     background-size: cover;
     width: 100%;
     height: 100vh;
 
-    .navbar{
-        background-color: transparent;
-   
-       
-        a{
+    .navbar-brand {
+        color: $text-color-logo;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: $font-primary;
+    }
+
+    .navbar-nav .nav-item {
+        font-size: 1.3rem;
+
+        a {
+            text-transform: capitalize;
             color: $text-color-secondary;
+            font-family: $font-secondary;
+        }
+
+        .active {
+            color: $text-color-primary;
+            text-decoration: none;
+            // outline: 1px solid peru;
+            border-bottom: 3px solid $text-color-primary;
+            // font-size: px;
+
+
+        }
+
+
+    }
+
+    .sign {
+        font-size: 1.3rem;
+        font-family: $font-secondary;
+
+        &:hover {
+            background-color: $text-color-primary;
+            color: $text-color-logo;
         }
     }
+
 }
-.landing-container{
+
+
+
+
+.landing-container {
     margin-top: 10rem;
-    margin-left: 10rem;
+    margin-left: 6rem;
     color: $text-color-primary;
+    font-family: $font-primary;
+
+    p,
+    button {
+        font-family: $font-secondary;
+    }
+
+    h1 {
+        font-size: 5rem;
+        color: $text-color-secondary;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: $bg_sign;
+    @include container-center;
+
+    .main-box {
+        width: 80%;
+        height: 80%;
+
+        .title-box {
+            // @include container-center;
+            background: $bg_title;
+            padding: 2rem 4rem;
+        }
+
+        .form-box {
+            // @include container-center;
+            background: $bg_form;
+            padding: 2rem 4rem;
+            h2{
+                text-align: center;
+                font-family: $font-primary;
+                font-size: 3rem;
+                
+            }
+            .forget{
+                cursor: pointer;
+                color: $font-secondary !important;
+                letter-spacing: .3rem;
+                text-decoration: none;
+                // text-decoration: underline;
+            }
+        }
+        .inner{
+            margin-top: 9%;
+        }
+
+    }
+
 }

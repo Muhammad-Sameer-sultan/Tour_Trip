@@ -1,18 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Eczar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eczar&family=Roboto&display=swap");
 header {
   background: url(../images/bg_main.jpg);
   background-size: cover;
   width: 100%;
   height: 100vh;
 }
-header .navbar {
-  background-color: transparent;
+header .navbar-brand {
+  color: red;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Eczar", serif;
 }
-header .navbar a {
+header .navbar-nav .nav-item {
+  font-size: 1.3rem;
+}
+header .navbar-nav .nav-item a {
+  text-transform: capitalize;
   color: #0ee73d;
+  font-family: "Roboto", sans-serif;
+}
+header .navbar-nav .nav-item .active {
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid white;
+}
+header .sign {
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+}
+header .sign:hover {
+  background-color: white;
+  color: red;
 }
 
 .landing-container {
   margin-top: 10rem;
-  margin-left: 10rem;
+  margin-left: 6rem;
   color: white;
+  font-family: "Eczar", serif;
+}
+.landing-container p,
+.landing-container button {
+  font-family: "Roboto", sans-serif;
+}
+.landing-container h1 {
+  font-size: 5rem;
+  color: #0ee73d;
+}
+.landing-container p {
+  font-size: 1.2rem;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: #A0E7E5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .main-box {
+  width: 80%;
+  height: 80%;
+}
+.main .main-box .title-box {
+  background: #81e496;
+  padding: 2rem 4rem;
+}
+.main .main-box .form-box {
+  background: #B4F8C8;
+  padding: 2rem 4rem;
+}
+.main .main-box .form-box h2 {
+  text-align: center;
+  font-family: "Eczar", serif;
+  font-size: 3rem;
+}
+.main .main-box .form-box .forget {
+  cursor: pointer;
+  color: "Roboto", sans-serif !important;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
+}
+.main .main-box .inner {
+  margin-top: 9%;
 }/*# sourceMappingURL=main.css.map */
