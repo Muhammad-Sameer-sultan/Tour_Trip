@@ -65,25 +65,55 @@ header .sign:hover {
   width: 80%;
   height: 80%;
 }
+.main .main-box #signup-box {
+  font-size: 0.8em;
+}
+.main .main-box #signup-box h2 {
+  font-size: 2rem;
+}
 .main .main-box .title-box {
   background: #81e496;
   padding: 2rem 4rem;
+  text-align: center;
+}
+.main .main-box .title-box h2, .main .main-box .title-box h4 {
+  font-family: "Eczar", serif;
+  font-size: 3.5rem;
+}
+.main .main-box .title-box h4 {
+  font-size: 2.7rem;
+}
+.main .main-box .title-box p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
 }
 .main .main-box .form-box {
   background: #B4F8C8;
   padding: 2rem 4rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
 }
 .main .main-box .form-box h2 {
-  text-align: center;
   font-family: "Eczar", serif;
   font-size: 3rem;
+  text-align: center;
 }
 .main .main-box .form-box .forget {
   cursor: pointer;
-  color: "Roboto", sans-serif !important;
+  color: #0ee73d;
   letter-spacing: 0.3rem;
-  text-decoration: none;
+  text-decoration: underline;
 }
-.main .main-box .inner {
-  margin-top: 9%;
+.main .main-box .form-box .btn {
+  font-size: 1.4rem;
+}
+.main .main-box .form-box .signup_click span {
+  color: #0ee73d;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.main .main-box .form-box #signup-btn {
+  width: 100%;
+  border-radius: 3rem;
 }/*# sourceMappingURL=main.css.map */

@@ -95,39 +95,78 @@ header {
 .main {
     width: 100%;
     height: 100vh;
-    background: $bg_sign;
+    background: $bg_sign;   
     @include container-center;
 
     .main-box {
         width: 80%;
         height: 80%;
+        #signup-box{
+            h2{
+                font-size: 2rem;
+            }
+            font-size: 0.8em;
+        }
 
         .title-box {
             // @include container-center;
             background: $bg_title;
             padding: 2rem 4rem;
+            text-align: center;
+            h2,h4{
+                font-family: $font-primary;
+                font-size: 3.5rem;
+            }
+            h4{
+                font-size: 2.7rem;
+            }
+            p{
+                font-family: $font-secondary;
+                font-size: 1.5rem;
+            }
         }
 
         .form-box {
             // @include container-center;
+            
             background: $bg_form;
             padding: 2rem 4rem;
+            font-family: $font-secondary;
+            font-size: 1.2rem   ;
+            
+            
             h2{
-                text-align: center;
                 font-family: $font-primary;
                 font-size: 3rem;
+                text-align: center;
                 
             }
             .forget{
+                
                 cursor: pointer;
-                color: $font-secondary !important;
+                color: $text-color-secondary     ;
                 letter-spacing: .3rem;
-                text-decoration: none;
+                text-decoration: underline  ;
                 // text-decoration: underline;
+            }
+            .btn{
+                font-size: 1.4rem;
+            }
+            .signup_click{
+                span{
+                    color: $text-color-secondary;
+                    font-weight: 500;
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+            #signup-btn{
+                width: 100%;
+                border-radius: 3rem;
             }
         }
         .inner{
-            margin-top: 9%;
+            // margin-top: 9%;
         }
 
     }
