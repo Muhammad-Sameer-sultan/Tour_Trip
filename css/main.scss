@@ -92,15 +92,31 @@ header {
 
 }
 
+.bg{
+    // background: url('../images/hill.jpg');
+    background: $bg_sign;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+}
 .main {
     width: 100%;
     height: 100vh;
-    background: $bg_sign;   
+    // background: $bg_sign;  
+    position: relative  ;
+
+    // display: inline-block; 
+    // flex-wrap: wrap;
+    // overflow: scroll;
+
     @include container-center;
 
     .main-box {
         width: 80%;
         height: 80%;
+        // overflow: hidden;
+        // flex-wrap: wrap;
+        opacity: 0.9;
+       
         #signup-box{
             h2{
                 font-size: 2rem;
@@ -123,6 +139,17 @@ header {
             p{
                 font-family: $font-secondary;
                 font-size: 1.5rem;
+            }
+            #signp-title{
+                h2{
+                    font-size: 2rem;
+                }
+                h4{
+                    font-size: 1rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
             }
         }
 
