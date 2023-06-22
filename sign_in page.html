@@ -16,7 +16,7 @@
     <div class="main">
         <div class="row  main-box ">
             <div class="col-md-6 title-box rounded-start-5">
-                <div class="inner d-none" id="signin-title">
+                <div class="inner d-block" id="signin-title">
                     <!-- sign in title  div start -->
                     <h2>TOUR & TRIP</h2>
                     <h4>Plain your TOur and Trip with Us</h4>
@@ -27,7 +27,7 @@
                         through the Community Guidelines. </p>
                 </div>
 
-                <div class="inner " id="signp-title">
+                <div class="inner d-none" id="signp-title">
                     <!-- sign up title  div start -->
                     <h2>Sign Up Now</h2>
                     <h4>Specail Discount for our New Customers</h4>
@@ -36,7 +36,7 @@
                 <!-- sign up title div end -->
             </div>
             <div class="col-md-6 form-box rounded-end-5 ">
-                <div class="inner d-none" id="signin-box">
+                <div class="inner d-block" id="signin-box">
                     <!-- sign in form start -->
                     <h2>Sign In</h2>
                     <form>
@@ -55,15 +55,15 @@
 
                     </form>
                     <p class="signup_click my-4 ">If you don't have an account? please registered your self by
-                        <span>Sign Up</span>
+                        <span id="signup_link">Sign Up</span>
                     </p>
                     <!-- /sign in form end -->
                 </div>
 
-                <div class="inner" id="signup-box">
-                    <!-- alert Start -->
-                   <div id="message"></div>
-                    <!-- alert end -->
+                <!-- alert Start -->
+               <div id="message"></div>
+                <!-- alert end -->
+                <div class="inner d-none" id="signup-box">
 
                     <!-- sign up form start -->
                     <h2>Sign Up</h2>
@@ -101,7 +101,7 @@
                             <input type="password" class="form-control form-control-sm" id="signup-confirm-password"
                                 placeholder="confirm your Password">
                         </div>
-                        <button class="btn btn-success my-3" id="signup-btn">Sign In</button>
+                        <button class="btn btn-success my-3" id="signup-btn">Sign Up</button>
 
                     </form>
                    

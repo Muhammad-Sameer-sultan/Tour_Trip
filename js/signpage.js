@@ -8,6 +8,7 @@ let inlineRadio2 = document.querySelector('#inlineRadio2');
 let signup_password = document.querySelector('#signup-password');
 let signup_confirm_password = document.querySelector('#signup-confirm-password');
 let signup_btn = document.querySelector('#signup-btn');
+let signup_link = document.querySelector('#signup_link');
 
 
 signup_btn.addEventListener('click', function (e) {
@@ -27,19 +28,24 @@ signup_btn.addEventListener('click', function (e) {
 
     }
 
-    let user_storage = localStorage.getItem('user_storage');
+    let user_storage = localStorage.getItem('user_storages');
     let user_list;
     if (user_storage === null) {
         user_list = [];
     }
     else {
-        user_list = JSON.stringify(user_storage);
+        user_list = JSON.parse(user_storage);
     }
 
     let password_check = signup_password.value !== signup_confirm_password.value ? true : false;
-    if (false) {
+    let email_check= user_list.some(user=>
+        {
+            return user.user_email===new_user.user_email;   
+        })
+    
+    if (email_check) {
 
-        console.log('if');
+        show('Error', 'This Email is already exist');
     }
     else if (password_check) {
         show('Error', 'incorrect password');
@@ -47,7 +53,11 @@ signup_btn.addEventListener('click', function (e) {
 
     else {
         user_list.push(new_user);
-        console.log('else');
+        user_storage= JSON.stringify(user_list);
+        localStorage.setItem('user_storages',user_storage);
+        show('Success','your Account is created Suceess');
+        document.querySelector('.alert').classList.replace('alert-danger','alert-success');
+        window.location.href = "sign_in page.html";
     }
 
 
@@ -69,3 +79,10 @@ function show(type, message) {
         divmessage.innerHTML = "";
     }, 1000)
 }
+//sign up link
+
+
+signup_link.addEventListener('click',function(e){
+        signup_btn.classList.toggle('d-block');
+        inner.classList.toggle('d-none');
+});
