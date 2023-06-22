@@ -6,6 +6,22 @@ header {
   width: 100%;
   height: 100vh;
 }
+header nav .icon-container {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .icon-container h6 {
+  color: black;
+  text-decoration: underline;
+  margin: 1rem;
+}
+header nav .icon-container i {
+  font-size: 3rem;
+  color: #0ee73d;
+}
 header .navbar-brand {
   color: red;
   font-size: 2rem;
