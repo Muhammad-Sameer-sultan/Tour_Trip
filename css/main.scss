@@ -1,3 +1,6 @@
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Eczar&family=Roboto&display=swap');
 
@@ -19,8 +22,14 @@ $bg_title: #81e496;
     align-items: center;
 }
 
+
+html{
+    font-size: 90%;
+}
+// (to right, rgba(0, 0, 0, .5),rgba(0, 0, 0, .1))
+// url(../images/bg_main.jpg)
 header {
-    background-image: url(../images/bg_main.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5),rgba(0, 0, 0, .1)),url(../images/bg_main.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -52,8 +61,17 @@ nav{
         text-transform: uppercase;
         font-weight: 600;
         font-family: $font-primary;
+        &:hover{
+            transform: scale(1.1);
+            color: $text-color-secondary;
+            text-shadow: 0rem 0rem 1rem red;
+        }
     }
-
+    .navbar-toggler{
+        // background: #000;
+        background: $text-color-secondary;
+       
+    }
     .navbar-nav .nav-item {
         font-size: 1.3rem;
 
@@ -61,14 +79,19 @@ nav{
             text-transform: capitalize;
             color: $text-color-secondary;
             font-family: $font-secondary;
+            margin-left: 1rem;
+            &:hover{
+                color: $text-color-primary;
+                text-decoration: none;
+                border-bottom: 3px solid $text-color-primary;
+            }
         }
 
         .active {
             color: $text-color-primary;
             text-decoration: none;
-            // outline: 1px solid peru;
             border-bottom: 3px solid $text-color-primary;
-            // font-size: px;
+            
 
 
         }
@@ -81,8 +104,8 @@ nav{
         font-family: $font-secondary;
 
         &:hover {
-            background-color: $text-color-primary;
-            color: $text-color-logo;
+            background-color: $text-color-secondary;
+            color: $text-color-primary;
         }
     }
 
@@ -254,7 +277,21 @@ nav{
                 font-size: 1rem;
             }
             .profile-container{
+                .data-container{
 
+                    .data-content{
+                        // background: #000;
+                        h4:last-child{
+                            margin-left: 1rem;
+                        }
+                        h4{
+                            
+                            text-align: right;
+                            font-size: 1rem;
+
+                        }
+                    }
+                }
             }
             .history-container{
                 position: relative;
@@ -282,3 +319,5 @@ nav{
         }
     }
 }
+
+@import 'media.scss';   

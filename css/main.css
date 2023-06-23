@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Eczar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Eczar&family=Roboto&display=swap");
+html {
+  font-size: 90%;
+}
+
 header {
-  background-image: url(../images/bg_main.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/bg_main.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -31,6 +35,14 @@ header .navbar-brand {
   font-weight: 600;
   font-family: "Eczar", serif;
 }
+header .navbar-brand:hover {
+  transform: scale(1.1);
+  color: #0ee73d;
+  text-shadow: 0rem 0rem 1rem red;
+}
+header .navbar-toggler {
+  background: #0ee73d;
+}
 header .navbar-nav .nav-item {
   font-size: 1.3rem;
 }
@@ -38,6 +50,12 @@ header .navbar-nav .nav-item a {
   text-transform: capitalize;
   color: #0ee73d;
   font-family: "Roboto", sans-serif;
+  margin-left: 1rem;
+}
+header .navbar-nav .nav-item a:hover {
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid white;
 }
 header .navbar-nav .nav-item .active {
   color: white;
@@ -49,8 +67,8 @@ header .sign {
   font-family: "Roboto", sans-serif;
 }
 header .sign:hover {
-  background-color: white;
-  color: red;
+  background-color: #0ee73d;
+  color: white;
 }
 
 .landing-container {
@@ -171,6 +189,13 @@ header .sign:hover {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
 }
+.profile-main-container .card-container .card-inner .profile-container .data-container .data-content h4:last-child {
+  margin-left: 1rem;
+}
+.profile-main-container .card-container .card-inner .profile-container .data-container .data-content h4 {
+  text-align: right;
+  font-size: 1rem;
+}
 .profile-main-container .card-container .card-inner .history-container {
   position: relative;
 }
@@ -194,4 +219,10 @@ header .sign:hover {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 66%;
+  }
 }/*# sourceMappingURL=main.css.map */
