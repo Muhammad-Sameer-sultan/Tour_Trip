@@ -133,7 +133,7 @@ signup_link.addEventListener('click',function(e){
             
             if(crediential_check){
 console.log(login_user);
-                localStorage.setItem('login_storage',"login_user")
+                localStorage.setItem('login_storage',JSON.stringify(login_user));
                 window.location.href='index.html';
                 // user_icon_name.innerHTML=login_user.user_name;
 

@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Eczar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Eczar&family=Roboto&display=swap");
 header {
-  background: url(../images/bg_main.jpg);
+  background-image: url(../images/bg_main.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   width: 100%;
   height: 100vh;
 }
@@ -146,4 +148,50 @@ header .sign:hover {
 .main .main-box .form-box #signup-btn {
   width: 100%;
   border-radius: 3rem;
+}
+
+.profile-main-container .card-container {
+  padding: 1rem;
+}
+.profile-main-container .card-container .data-content {
+  padding: 0rem 3rem;
+}
+.profile-main-container .card-container .card-inner {
+  width: 100%;
+  height: 100%;
+  background: #c9c9c9;
+}
+.profile-main-container .card-container .card-inner h2 {
+  font-family: "Eczar", serif;
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: underline;
+}
+.profile-main-container .card-container .card-inner div {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+.profile-main-container .card-container .card-inner .history-container {
+  position: relative;
+}
+.profile-main-container .card-container .card-inner .history-container table {
+  background-color: #555;
+  color: white;
+}
+.profile-main-container .card-container .card-inner .history-container table th {
+  text-decoration: none;
+  padding: 1rem;
+  border: 1px solid white;
+}
+.profile-main-container .card-container .card-inner .history-container .order {
+  background: #555;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-main-container .card-container .card-inner .history-container h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: white;
 }/*# sourceMappingURL=main.css.map */

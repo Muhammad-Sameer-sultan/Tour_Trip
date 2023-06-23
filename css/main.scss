@@ -20,8 +20,10 @@ $bg_title: #81e496;
 }
 
 header {
-    background: url(../images/bg_main.jpg);
+    background-image: url(../images/bg_main.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     width: 100%;
     height: 100vh;
 
@@ -215,4 +217,68 @@ nav{
 
     }
 
+}
+//profile page
+
+.profile-main-container{
+    .card-container{
+        padding: 1rem;
+        .data-content{
+            // margin: 2rem 1rem;
+            padding: 0rem 3rem;
+            // background: ;
+        }
+        // width: 100vh;
+        //     height: 90vh;
+            
+        // position: relative;
+        // height: 80%;
+        // width: 80%;
+
+        // .card-inner{
+        // //     width: 100%;
+        // //     height: 100%;
+        // // }
+        .card-inner{
+            width: 100%;
+            height: 100%;
+            background: #c9c9c9;
+            h2{
+                font-family: $font-primary;
+                font-size: 3rem;
+                text-align: center;
+                text-decoration: underline;
+            }
+            div{
+                font-family: $font-secondary;
+                font-size: 1rem;
+            }
+            .profile-container{
+
+            }
+            .history-container{
+                position: relative;
+                table{
+                    background-color: #555;
+                    color: $text-color-primary;
+                    th{
+                        text-decoration: none;
+                        padding: 1rem;
+                        border: 1px solid white;
+                    }
+                }
+                .order{
+
+                    background: #555;
+                    height: 50%;
+                    @include container-center();
+                }
+                h6{
+                    font-family: $font-secondary;
+                    font-size: 2rem;
+                    color: $text-color-primary;
+                }
+            }
+        }
+    }
 }
